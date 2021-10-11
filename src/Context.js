@@ -15,8 +15,7 @@ export default class HikeProvider extends Component {
     try {
       let response = await Client.getEntries({
         content_type: "contentfulData",
-        // order: "sys.createdAt"
-        order: 'fields.price'
+        order: "sys.createdAt"
       });
       let hikes = this.formatData(response.items);
 

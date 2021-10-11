@@ -50,7 +50,7 @@ export default function Map() {
           {selectedActivity ? (
             <Popup
               closeButton={true}
-              closeOnClick={false}
+              closeOnClick={true}
               latitude={selectedActivity.location.lat}
               longitude={selectedActivity.location.lon}
               onClose={() => {

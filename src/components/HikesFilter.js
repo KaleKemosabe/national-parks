@@ -1,12 +1,16 @@
 import React from "react";
 import Title from "./Title";
+import Map from "../components/Map/Map";
 
-const HikesFilter = ({ hikes }) => {
-
+export function HikesFilter() {
+  
   return (
+    <>
     <section className="filter-container">
-      <Title title="Tähän tulee kartta" />
+      <Title title="Suomen kansallispuistot" />
     </section>
+    <Map />
+    </>
   );
 };
 

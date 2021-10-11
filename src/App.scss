@@ -482,8 +482,9 @@ h6 {
   height: 2rem;
 }
 
-/* .map-section {
+.map-section {
   height: 90vh;
+  position: relative;
 }
 
 .map-container {
@@ -491,7 +492,6 @@ h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 3rem;
   border: 1px solid #333333;
 }
 
@@ -516,7 +516,7 @@ h6 {
 
 .np-location {
   margin-bottom: 0.5rem;
-} */
+}
 
 /* Footer */
 .footer {
