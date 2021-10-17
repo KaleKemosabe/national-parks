@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './App.css';
 import Home from './pages/Home';
 import Hikes from './pages/Hikes';
 import SingleHike from './pages/SingleHike';

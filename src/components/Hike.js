@@ -11,10 +11,10 @@ export default function Hike({hike}) {
             <div className="img-container">
                 <img src={images[0] || defaultImg} alt="single hike" />
                 <div className="name-tag">
-                    <h6>{name}</h6>
+                    <h6>Tarinointia</h6>
                 </div>
                 <Link to={`/hikes/${slug}`} className="btn-primary hike-link">
-                    Features
+                    Info
                 </Link>
             </div>
             <p className="hike-info">{name}</p>

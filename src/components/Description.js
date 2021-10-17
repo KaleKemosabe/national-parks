@@ -1,36 +1,31 @@
 import React, { Component } from 'react';
-import { FaStreetView, FaHiking, FaShuttleVan, FaPagelines } from 'react-icons/fa';
+import { FaStreetView, FaHiking, FaMapSigns } from 'react-icons/fa';
 import Title from './Title';
 
 export default class Description extends Component {
     state = {
         description: [
             {
+                icon:<FaMapSigns />,
+                title: 'Mikä sivusto?',
+                info: "Sivustolle on tarkoitus tehdä tulevaisuudessa erilaisia karttapohjia, joiden kautta allekirjoittanut lähinnä harjoittelee koodaustaitojaan."
+            },
+            {
                 icon:<FaStreetView />,
                 title: 'Mihin mennä?',
-                info: "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin."
+                info: "Karttapohjasta näet Suomen kansallispuistojen sijainnit, joka helpottaa seuraavan retken suunnittelua."
             },
             {
                 icon:<FaHiking />,
                 title: 'Mitä tehdä?',
-                info: "He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections."
-            },
-            {
-                icon:<FaShuttleVan />,
-                title: 'Miten paikalle?',
-                info: "The bedding was hardly able to cover it and seemed ready to slide off any moment."
-            },
-            {
-                icon:<FaPagelines />,
-                title: 'Mikä ihmeen luonto?',
-                info: "His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly."
+                info: "Sivustolle täydentyy hiljalleen myös erinäisiä reissutarinoita lähinnä kaveriporukalle tuottamamme toisen sivuston kautta"
             }
         ]
     }
     render() {
         return (
             <section className="description">
-                <Title title="description" />
+                <Title title="Kuka, mitä, häh?" />
                 <div className="description-center">
                     {this.state.description.map((item, index) => {
                         return <article key={index} className="service">

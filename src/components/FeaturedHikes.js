@@ -14,7 +14,7 @@ export default class FeaturedHikes extends Component {
 
         return (
             <section className="featured-hikes">
-                <Title title="featured hikes" />
+                <Title title="Reissutarinoita" />
                 <div className="featured-hikes-center">
                     {loading ? <Loading /> : hikes}
                 </div>

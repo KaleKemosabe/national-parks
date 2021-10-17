@@ -1,7 +1,4 @@
-// @TODO change all styles to .scss
-
-// Color variables
-// $color-primary: #242998;
+/* @TODO change all styles to .scss */
 
 * {
   margin: 0;
@@ -102,13 +99,14 @@ h6 {
   background: var(--offWhite);
   z-index: 1;
 }
+
+.logo {
+  height: 3rem;
+}
+
 .nav-header {
   display: flex;
   justify-content: space-between;
-
-  .logo {
-    height: 3rem;
-  }
 }
 .nav-btn {
   background: transparent;
@@ -153,6 +151,7 @@ h6 {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
   }
   .nav-links {
     height: auto;
@@ -175,7 +174,7 @@ h6 {
   justify-content: center;
 }
 .hikesHero {
-  background-image: url("./images/hike-2.jpeg");
+  background-image: url("./images/map.jpg");
   min-height: 60vh;
 }
 /* End of Hero */

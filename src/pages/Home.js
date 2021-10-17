@@ -10,9 +10,9 @@ export default function Home() {
     return (
         <>
             <Hero>
-                <Banner title="Kansallispuistot" subtitle="Tältä sivustolta löydät lisäinfoa Suomen kansallispuistoista">
+                <Banner title="Mene metsään" subtitle="Infoa kansallispuistoista ja sekalaista reissutarinointia">
                     <Link to='/hikes' className="btn-primary">
-                        Avaa kartta
+                        Siirry karttasivulle
                     </Link>
                 </Banner>
             </Hero>

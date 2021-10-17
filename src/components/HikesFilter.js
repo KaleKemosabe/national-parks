@@ -8,8 +8,8 @@ export function HikesFilter() {
     <>
     <section className="filter-container">
       <Title title="Suomen kansallispuistot" />
+      <Map />
     </section>
-    <Map />
     </>
   );
 };

@@ -13,6 +13,9 @@ export default function HikesList({hikes}) {
 
     return (
         <section className="hikeslist">
+            <div className="section-title">
+            <h4>Reissutarinat</h4>
+            </div>
             <div className="hikeslist-center">
                 {
                     hikes.map(item => {

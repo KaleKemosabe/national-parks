@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.png';
+// import logo from '../images/logo.png';
 // TODO change logo to lottie animation
 // import animationData from '../images/lottie/forest.json';
 import { FaAlignJustify } from 'react-icons/fa';
@@ -19,7 +19,10 @@ export default class Navbar extends Component {
                 <div className="nav-center">
                     <div className="nav-header">
                         <Link to="/">
-                            <img src={logo} alt="logo" className="logo" />
+                            <div alt="logo" className="logo">
+                                Logo here
+                            </div>
+                            {/* <img src={logo} alt="logo" className="logo" /> */}
                         </Link>
                         <button 
                             type="button" 
@@ -31,10 +34,10 @@ export default class Navbar extends Component {
                     </div>
                     <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}>
                         <li>
-                            <Link to="/">Kartta</Link>
+                            <Link to="/hikes">Kartta</Link>
                         </li>
                         <li>
-                            <Link to="/hikes">Reitit</Link>
+                            <Link to="/">TyhjäLinkki</Link>
                         </li>
                     </ul>
                 </div>
