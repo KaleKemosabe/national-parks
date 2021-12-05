@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-// import logo from '../images/logo.png';
 // TODO change logo to lottie animation
 // import animationData from '../images/lottie/forest.json';
-import { FaAlignJustify } from 'react-icons/fa';
+import { FaAlignJustify, FaMountain } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
@@ -18,11 +17,9 @@ export default class Navbar extends Component {
             <nav className="navbar">
                 <div className="nav-center">
                     <div className="nav-header">
-                        <Link to="/">
-                            <div alt="logo" className="logo">
-                                Logo here
-                            </div>
-                            {/* <img src={logo} alt="logo" className="logo" /> */}
+                        <Link to="/" className="logo-link">
+                            <FaMountain className="logo" />
+                            <p className="logo logo-text">KP-INFO</p>
                         </Link>
                         <button 
                             type="button" 
@@ -37,7 +34,7 @@ export default class Navbar extends Component {
                             <Link to="/hikes">Kartta</Link>
                         </li>
                         <li>
-                            <Link to="/">TyhjäLinkki</Link>
+                            <Link to="/hikes">Reissutarinat</Link>
                         </li>
                     </ul>
                 </div>

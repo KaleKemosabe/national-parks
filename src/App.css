@@ -100,8 +100,19 @@ h6 {
   z-index: 1;
 }
 
+.logo-link {
+  text-decoration: none;
+  display: flex;
+}
+
 .logo {
   height: 3rem;
+  font-size: 2rem;
+  color: #333333;
+}
+
+.logo-text {
+  padding-left: 0.5rem;
 }
 
 .nav-header {
